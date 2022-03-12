@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.type {
+  font-size: 14px;
+  font-weight: var(--font-medium);
+  text-transform: uppercase;
+  color: var(--gray-5);
+}
+
+.type.vegan {
+  color: var(--dish-vegan);
+}
+
+.type.fish {
+  color: var(--dish-fish);
+}
+
+.type.meat {
+  color: var(--dish-meat);
+}
+
+.pt {
+  font-size: 30px;
+  color: var(--gray-7);
+  font-weight: var(--font-medium);
+}
+
+.en {
+  font-size: 25px;
+  color: var(--gray-6);
+  font-weight: var(--font-regular);
+}
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 900px /* var(--mobile) */) {
+  .pt {
+    font-size: 25px;
+  }
+  .en {
+    font-size: 20px;
+  }
+}
+
+/* TV STYLES */
+@media only screen and (min-width: 1920px /* var(--tv) */) {
+  .container {
+    gap: 15px;
+  }
+  .type {
+    font-size: 30px;
+  }
+  .pt {
+    font-size: 60px;
+  }
+  .en {
+    font-size: 50px;
+  }
+}
